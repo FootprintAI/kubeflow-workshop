@@ -35,4 +35,11 @@ minikube start \
 --extra-config=kubeadm.pod-network-cidr=10.244.0.0/16 \
 --extra-config=kubelet.resolv-conf=/run/systemd/resolve/resolv.conf
 
+## hack: increase default pod limit to 512
 
+edit /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
+```
+ExecStart=xxxxx --max-pods=511
+
+```
+systemctl restart kubelet
