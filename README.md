@@ -22,6 +22,7 @@ To install kubeflow, you need to have a running kubernetes cluster, either an ex
 In this tutorial, we create a kubernetes cluster on top of minikube, a single node version of kubernetes, and install kubeflow on top of it.
 
 
+* [run-as-root](install/runasroot.sh)
 * [dockerd](install/dockerd.sh)
 * [minikube](install/minikube.sh)
 * [kubeflow-v1.2](install/kubeflow.v12.sh)
