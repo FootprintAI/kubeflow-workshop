@@ -9,7 +9,7 @@ apt-get install -y conntrack socat selinux-utils ebtables ethtool
 swapoff -a
 
 KUBECTL_VERSION=v1.20.1
-MINIKUBE_VERSION=v1.16.0
+MINIKUBE_VERSION=v1.20.0
 
 # get kubectl
 curl -LO https://storage.googleapis.com/kubernetes-release/release/$KUBECTL_VERSION/bin/linux/amd64/kubectl
