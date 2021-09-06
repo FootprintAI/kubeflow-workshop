@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# NOTE: this installation is DEPRECATED, please use kubeflow.v13.sh instead.
+# and there is no upgradation documentation on kubeflow, as it involved pvc/crd resources.
+# so the current suggestion is to backup all data and install new version instead.
 
 # run as root
 
