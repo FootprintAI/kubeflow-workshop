@@ -16,7 +16,7 @@ KF_DIR=${KUBEFLOW_ROOT}/${KF_NAME}
 mkdir -p $KF_DIR
 
 cd $KF_DIR && \
-  wget https://github.com/kubeflow/manifests/archive/refs/tags/v1.3.0.tar.gz && \
-  tar -xzvf v1.3.0.tar.gz && \
-  cd manifests-1.3.0  && \
+  wget https://github.com/kubeflow/manifests/archive/refs/tags/v1.3.1.tar.gz && \
+  tar -xzvf v1.3.1.tar.gz && \
+  cd manifests-1.3.1  && \
   while ! kustomize build --load_restrictor=none example | kubectl apply -f -; do echo "Retrying to apply resources"; sleep 10; done
