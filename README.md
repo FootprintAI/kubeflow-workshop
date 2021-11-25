@@ -17,13 +17,19 @@ Gpu: Optional
 
 ### Installation (w/o GPU)
 
-To install kubeflow, you need to have a running kubernetes cluster, either an existing running one or you can just create one.
-
-In this tutorial, we create a kubernetes cluster on top of minikube, a single node version of kubernetes, and install kubeflow on top of it.
-
+To simplify the installation process, we use `root` to install everthing (although it is NOT recommended using in production environment, use it on your own risk)
 
 * [run-as-root](install/runasroot.sh)
 * [dockerd](install/dockerd.sh)
+
+
+To install kubeflow, you need to have a running kubernetes cluster, either an existing running one or you can just create one. In this example, we provides both minikube installation and kind installation for creating a cluster, you can just pick either one.
+
 * [minikube](install/minikube.sh)
-* [kubeflow-v1.2](install/kubeflow.v12.sh)
+* [kind](install/kind.sh)
+
+In this tutorial, we create a kubernetes cluster on top of a single node version of kubernetes, and install kubeflow .
+
+* [kubeflow-v1.2](install/kubeflow.v12.sh) -- out of dated
 * [kubeflow-v1.3](install/kubeflow.v13.sh)
+* [kubeflow-v1.4](install/kubeflow.v14.sh)
