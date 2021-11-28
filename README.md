@@ -33,3 +33,11 @@ In this tutorial, we create a kubernetes cluster on top of a single node version
 * [kubeflow-v1.2](install/kubeflow.v12.sh) -- out of dated
 * [kubeflow-v1.3](install/kubeflow.v13.sh)
 * [kubeflow-v1.4](install/kubeflow.v14.sh)
+
+### For Windows user
+
+We have scrips to Windows user to install kubeflow, please noted that you have to use Windows 10 Pro or later version which supports Hyper-V.
+
+* [dockerd](install/windows/docker.bat.md)
+* [kid](install/windows/kind.bat.md)
+* [kubeflow-v1.3](install/windows/kubeflow.v13.bat.md)
