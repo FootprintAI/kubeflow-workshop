@@ -28,7 +28,12 @@ To install kubeflow, you need to have a running kubernetes cluster, either an ex
 * [minikube](install/minikube.sh)
 * [kind](install/kind.sh)
 
-In this tutorial, we create a kubernetes cluster on top of a single node version of kubernetes, and install kubeflow .
+Since KinD use containerd not dockerd as its runtime, so we have to use `emissary` as Kubeflow/Pipeline's default executor.) See script below to replace its default runtime executor (tested in v1.4)
+
+* [emissary](install/use-emissary-default-executor.sh)
+
+
+We then install kubeflow on the cluster we just created.
 
 * [kubeflow-v1.2](install/kubeflow.v12.sh) -- out of dated
 * [kubeflow-v1.3](install/kubeflow.v13.sh)
@@ -39,5 +44,5 @@ In this tutorial, we create a kubernetes cluster on top of a single node version
 We have scrips to Windows user to install kubeflow, please noted that you have to use Windows 10 Pro or later version which supports Hyper-V.
 
 * [dockerd](install/windows/docker.bat.md)
-* [kid](install/windows/kind.bat.md)
-* [kubeflow-v1.3](install/windows/kubeflow.v13.bat.md)
+* [kind](install/windows/kind.bat.md)
+* [kubeflow-v1.4](install/windows/kubeflow.v14.bat.md)

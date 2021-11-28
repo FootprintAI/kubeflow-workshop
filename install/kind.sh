@@ -11,4 +11,3 @@ mv ./kubectl /usr/local/bin/kubectl
 
 # create a cluster with k8s version 1.20.7
 kind create cluster --image=kindest/node:v1.20.7
-
