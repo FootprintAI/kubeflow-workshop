@@ -1,0 +1,21 @@
+apiVersion: kubeflow.org/v1beta1
+kind: Viewer
+metadata:
+  name: viewer-7c323b7907688f3f3fd81151c62eb58271a73803
+  namespace: kubeflow-user-example-com
+spec:
+  podTemplateSpec:
+    spec:
+      containers:
+      - volumeMounts:
+        - mountPath: /persist-log
+          name: mypvc
+      serviceAccountName: default-editor
+      volumes:
+      - name: mypvc
+        persistentVolumeClaim:
+          claimName: <pvc-claim-name>
+  tensorboardSpec:
+    logDir: /persist-log/20211130-053919
+    tensorflowImage: tensorflow/tensorflow:2.2.2
+  type: tensorboard
