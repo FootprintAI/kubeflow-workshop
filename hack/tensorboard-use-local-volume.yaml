@@ -1,3 +1,11 @@
+## run
+# kubectl get pvc -n kubeflow-user-example-com | grep volumeop to get pipeline's pvc name
+# and replace it with <pvc-claim-name>
+#
+# then create a view directly by
+# kubectl apply -f hack/tensorboard-use-local-volume.yaml
+
+
 apiVersion: kubeflow.org/v1beta1
 kind: Viewer
 metadata:
@@ -16,6 +24,6 @@ spec:
         persistentVolumeClaim:
           claimName: <pvc-claim-name>
   tensorboardSpec:
-    logDir: /persist-log/20211130-053919
+    logDir: /persist-log
     tensorflowImage: tensorflow/tensorflow:2.2.2
   type: tensorboard
