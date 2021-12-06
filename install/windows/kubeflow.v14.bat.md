@@ -4,7 +4,7 @@
 ```
 curl -Lo kubernetes-client-windows-amd64.tar.gz https://storage.googleapis.com/kubernetes-release/release/v1.20.7/kubernetes-client-windows-amd64.tar.gz
 tar -xzvf kubernetes-client-windows-amd64.tar.gz
-move kubernetes\client\bin\kubectl.exe .\kubect.
+move kubernetes\client\bin\kubectl.exe .\kubectl.
 ```
 
 
