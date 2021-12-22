@@ -1,4 +1,8 @@
 ## run
+#
+# kubectl get viewer -n kubeflow-user-example-com to get latest viewer id
+# and replace it with <viewer-name>
+#
 # kubectl get pvc -n kubeflow-user-example-com | grep volumeop to get pipeline's pvc name
 # and replace it with <pvc-claim-name>
 #
@@ -9,14 +13,14 @@
 apiVersion: kubeflow.org/v1beta1
 kind: Viewer
 metadata:
-  name: viewer-7c323b7907688f3f3fd81151c62eb58271a73803
+  name: <viewer-name>
   namespace: kubeflow-user-example-com
 spec:
   podTemplateSpec:
     spec:
       containers:
       - volumeMounts:
-        - mountPath: /persist-log
+        - mountPath: /data
           name: mypvc
       serviceAccountName: default-editor
       volumes:
@@ -24,6 +28,6 @@ spec:
         persistentVolumeClaim:
           claimName: <pvc-claim-name>
   tensorboardSpec:
-    logDir: /persist-log
+    logDir: /data
     tensorflowImage: tensorflow/tensorflow:2.2.2
   type: tensorboard
