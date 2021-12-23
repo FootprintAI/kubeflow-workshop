@@ -7,6 +7,10 @@ This workshop is for educational purpose, please contact <partnership@footprint-
 
 we have listed few good-for-beginner pipelines to get started, please check [Pipeline](pipelines) folder
 
+### Tutorials
+
+We have listed some tutorials on how advanced use kubeflow and it's components, please check [Tutorials](tutorials) folder
+
 ### Prerequsite
 
 ```
