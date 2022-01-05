@@ -29,5 +29,5 @@ spec:
           claimName: <pvc-claim-name>
   tensorboardSpec:
     logDir: /data
-    tensorflowImage: tensorflow/tensorflow:2.2.2
+    tensorflowImage: footprintai/tensorboard:2.7.0 # see https://github.com/FootprintAI/tensorboardd
   type: tensorboard
