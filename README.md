@@ -19,6 +19,11 @@ Memory: 16G+
 Gpu: Optional
 ```
 
+#### cli Installation
+
+* [multikf](https://github.com/footprintai/multikf): a simplified cli tool to install one or many kubeflow clusters in the same host.
+
+
 ### Installation (w/o GPU)
 
 To simplify the installation process, we use `root` to install everthing (although it is NOT recommended using in production environment, use it on your own risk)
