@@ -11,6 +11,10 @@ we have listed few good-for-beginner pipelines to get started, please check [Pip
 
 We have listed some tutorials on how advanced use kubeflow and it's components, please check [Tutorials](tutorials) folder
 
+### Talks & Slides
+
+We put our slides from invited talks and workshops under [here](https://github.com/FootprintAI/talks/tree/main/slides)
+
 ### Prerequsite
 
 ```
